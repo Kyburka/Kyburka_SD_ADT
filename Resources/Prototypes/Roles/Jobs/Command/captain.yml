@@ -19,6 +19,8 @@
     - !type:OverallPlaytimeRequirement
       time: 504000 #140 hrs # Corvax-RoleTime
   # ADT Restrict Start
+    - !type:AgeRequirement
+      requiredAge: 24
     - !type:SpeciesRequirement
       inverted: true
       species:

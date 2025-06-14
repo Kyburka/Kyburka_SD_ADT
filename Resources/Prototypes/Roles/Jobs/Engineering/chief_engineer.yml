@@ -16,6 +16,8 @@
 #    - !type:OverallPlaytimeRequirement
 #      time: 144000 #40 hrs
       #ADT tweak start
+    - !type:AgeRequirement
+      requiredAge: 24
     - !type:SpeciesRequirement
       inverted: true
       species:
