@@ -42,6 +42,9 @@
   - type: ShowHealthBars
     damageContainers:
     - Biological
+  - type: Construction
+    graph: ADTGlassesMedHUD
+    node: glassesMed
   - type: ShowHealthIcons
     damageContainers:
     - Biological
@@ -52,7 +55,6 @@
     tags:
     - WhitelistChameleon
     - HudMedical
-
 - type: entity
   parent: ClothingEyesBase
   id: ADTClothingEyesGlassesMimicry
@@ -63,46 +65,7 @@
   - type: Clothing
     sprite: ADT/Clothing/Eyes/Glasses/mimicry.rsi
 
-    # halloween
 
-- type: entity
-  parent: ClothingEyesBase
-  id: ADTNeonTacticalGlasses
-  name: neon tactical glasses
-  description: Ordinary tactical glasses made of acid-green polycarbonate.
-  suffix: Halloween
-  components:
-  - type: Sprite
-    sprite: ADT/Clothing/Eyes/Glasses/neontactical.rsi
-    state: icon
-  - type: Clothing
-    sprite: ADT/Clothing/Eyes/Glasses/neontactical.rsi
-
-- type: entity
-  parent: ClothingEyesBase
-  id: ADTServantOfEvilGlasses
-  name: welding glasses
-  description: welding glasses
-  suffix: Halloween
-  components:
-  - type: Sprite
-    sprite: ADT/Clothing/Eyes/Glasses/servant_of_evil.rsi
-    state: icon
-  - type: Clothing
-    sprite: ADT/Clothing/Eyes/Glasses/servant_of_evil.rsi
-
-- type: entity
-  parent: ClothingEyesBase
-  id: ADTClothingEyesGlassesSollux
-  name: welding glasses
-  description: welding glasses
-  suffix: Halloween
-  components:
-  - type: Sprite
-    sprite: ADT/Clothing/Eyes/Glasses/sollux_captor.rsi
-    state: icon
-  - type: Clothing
-    sprite: ADT/Clothing/Eyes/Glasses/sollux_captor.rsi
 
 - type: entity
   parent: [ClothingEyesBase, BaseMajorContraband]
@@ -153,6 +116,18 @@
     sprite: ADT/Clothing/Eyes/Glasses/welding.rsi
   - type: Clothing
     sprite: ADT/Clothing/Eyes/Glasses/welding.rsi
+  - type: Appearance
+  - type: EyeProtection
+
+- type: entity
+  parent: ClothingEyesBase
+  id: ADTClothingEyesWeldingOldStyle
+  name: engineering goggles
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Eyes/Glasses/welding_old.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Eyes/Glasses/welding_old.rsi
   - type: Appearance
   - type: EyeProtection
 

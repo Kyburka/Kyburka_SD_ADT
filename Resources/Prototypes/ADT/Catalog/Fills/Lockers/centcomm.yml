@@ -10,7 +10,6 @@
     - id: MedkitCombatFilled
     - id: MedkitBruteFilled
     - id: WeaponDisabler
-    - id: ADTBaseWeaponCaseNTBS
     # - id: ADTUnderwearBoxBlueshield
     - id: ADTClothingHeadsetAltBlueshield
     - id: ADTClothingHeadHatBeretBlueshield
@@ -22,6 +21,7 @@
     - id: ADTClothingUniformJumpsuitTurtleneckBlueshield
     - id: ADTCqcManualWeak
     - id: BlueShieldHypo
+    - id: FoodSnackLollypopWrappedBlueshield # SD tweak
 - type: entity
   id: ADTLockerBlueshieldFilled
   suffix: Filled
@@ -32,7 +32,6 @@
     - id: MedkitCombatFilled
     - id: MedkitBruteFilled
     - id: WeaponDisabler
-    - id: ADTBaseWeaponCaseNTBS
     # - id: ADTUnderwearBoxBlueshield
     - id: ADTClothingHeadsetAltBlueshield
     - id: ADTClothingHeadHatBeretBlueshield

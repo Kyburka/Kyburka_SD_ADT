@@ -12,7 +12,7 @@
     damageContainer: StructuralInorganic
     damageModifierSet: RGlass
   - type: RadiationBlocker
-    resistance: 2 # ADT tweak
+    resistance: 6 # ADT tweak
   - type: Destructible
     thresholds:
     - trigger:
@@ -82,8 +82,10 @@
     trackAllDamage: true
     damageOverlay:
       sprite: Structures/Windows/cracks_directional.rsi
+  - type: Damageable
+    damageModifierSet: RGlass
   - type: RadiationBlocker
-    resistance: 2 # ADT tweak
+    resistance: 4 # ADT tweak
   - type: Destructible
     thresholds:
     - trigger:
@@ -148,6 +150,7 @@
         - FullTileMask
         layer:
         - GlassLayer
+        density: 2000
   - type: Airtight
     noAirWhenFullyAirBlocked: false
     airBlockedDirection:

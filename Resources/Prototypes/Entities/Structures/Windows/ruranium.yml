@@ -15,13 +15,13 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 300
+        damage: 450
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
     - trigger:
         !type:DamageTrigger
-        damage: 150
+        damage: 225
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -51,11 +51,11 @@
   - type: StaticPrice
     price: 215
   - type: RadiationBlocker
-    resistance: 3.5 # ADT tweak
+    resistance: 8 # ADT tweak
 
 - type: entity
   id: UraniumReinforcedWindowDirectional
-  parent: WindowDirectional
+  parent: WindowDirectionalRCDResistant
   name: directional reinforced uranium window
   description: Don't smudge up the glass down there.
   placement:
@@ -79,17 +79,19 @@
     trackAllDamage: true
     damageOverlay:
       sprite: Structures/Windows/cracks_directional.rsi
+  - type: Damageable
+    damageModifierSet: RGlass
   - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 150
+        damage: 225
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
     - trigger:
         !type:DamageTrigger
-        damage: 75
+        damage: 113
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -107,7 +109,7 @@
   - type: StaticPrice
     price: 110
   - type: RadiationBlocker
-    resistance: 3.5 # ADT tweak
+    resistance: 4.5 # ADT tweak
 
 - type: entity
   parent: ReinforcedUraniumWindow

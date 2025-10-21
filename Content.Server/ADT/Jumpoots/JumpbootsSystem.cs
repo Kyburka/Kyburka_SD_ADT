@@ -15,6 +15,7 @@ using Robust.Server.GameObjects;
 using Content.Shared.Throwing;
 using Content.Shared.Inventory.Events;
 using Content.Server.Actions;
+using Content.Shared.Buckle.Components;
 
 namespace Content.Server.Clothing.EntitySystems;
 
@@ -24,7 +25,6 @@ public sealed partial class JumpbootsSystem : SharedJumpbootsSystem
     [Dependency] private readonly HandsSystem _handsSystem = default!;
     [Dependency] private readonly InventorySystem _inventorySystem = default!;
     [Dependency] private readonly BloodstreamSystem _bloodstreamSystem = default!;
-    [Dependency] private readonly SharedAudioSystem _audioSystem = default!;
     [Dependency] private readonly EmpSystem _emp = default!;
     [Dependency] private readonly SharedTransformSystem _transform = default!;
     [Dependency] private readonly SharedDoAfterSystem _doAfter = default!;
@@ -34,12 +34,12 @@ public sealed partial class JumpbootsSystem : SharedJumpbootsSystem
     [Dependency] private readonly IRobustRandom _random = default!;
     [Dependency] private readonly BodySystem _bodySystem = default!;
     [Dependency] private readonly EntityLookupSystem _lookup = default!;
-    [Dependency] private readonly SharedTransformSystem _transformSystem = default!;
     [Dependency] private readonly SharedAudioSystem _audio = default!;
     [Dependency] private readonly PhysicsSystem _physics = default!;
     [Dependency] private readonly GunSystem _gunSystem = default!;
     [Dependency] private readonly ThrowingSystem _throwing = default!;
     [Dependency] private readonly ActionsSystem _action = default!;
+
     public override void Initialize()
     {
         base.Initialize();
@@ -67,6 +67,9 @@ public sealed partial class JumpbootsSystem : SharedJumpbootsSystem
     private void OnJump(EntityUid uid, JumpbootsComponent component, JumpbootsActionEvent args)
     {
         if (args.Handled)
+            return;
+
+        if (TryComp<BuckleComponent>(args.Performer, out var buckle) && buckle.Buckled)
             return;
 
         var transform = Transform(uid);

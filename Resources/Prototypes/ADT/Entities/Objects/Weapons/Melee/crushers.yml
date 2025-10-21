@@ -10,9 +10,9 @@
     sprite: ADT/Objects/Weapons/Melee/Crushers/crusher_spear.rsi
     state: icon
   - type: AmmoCounter
-  - type: UseDelayOnShoot
-  - type: UseDelay
-    delay: 0.9
+  # - type: UseDelayOnShoot
+  # - type: UseDelay
+  #  delay: 0.9
   - type: Gun
     soundGunshot: /Audio/Weapons/plasma_cutter.ogg
     fireRate: 1
@@ -26,6 +26,13 @@
     capacity: 1
     count: 1
   - type: DisarmMalus
+  - type: UpgradeableMelee
+    whitelist:
+      tags:
+      - MeleeUpgrade
+  - type: ContainerContainer
+    containers:
+      upgrades: !type:Container
 
 - type: entity
   parent: [WeaponKineticBase, BaseSecurityCargoContraband]
@@ -84,10 +91,32 @@
       types:
         Slash: 10
   - type: PressureDamageModify
+    minPressure: -1
     additionalDamage:
       types:
         Blunt: 10
         Slash: 15
+  - type: Clothing
+    sprite: ADT/Objects/Weapons/Melee/Crushers/crusher_spear.rsi
+    quickEquip: false
+    slots:
+    - suitStorage
+  - type: Tool
+    qualities:
+      - Slicing
+    useSound:
+      path: /Audio/Items/Culinary/chop.ogg
+  - type: Prying 
+    useSound:
+      path: /Audio/Items/crowbar.ogg
+  - type: UnpoweredFlashlight
+  - type: PointLight
+    color: "#ffeead"
+    enabled: false
+  - type: Sharp
+  - type: Utensil
+    types:
+      - Knife
 
 - type: entity
   parent: WeaponKineticBase
@@ -101,11 +130,11 @@
   - type: UseDelay
     delay: 1
   - type: MeleeWeapon
-    attackRate: 1
+    attackRate: 0.75
     wideAnimationRotation: -135
     damage:
       types:
-        Blunt: 20
+        Blunt: 10
         Slash: 5
     soundHit:
       collection: MetalThud
@@ -127,10 +156,20 @@
   - type: GunRequiresWield
   - type: Wieldable
   - type: PressureDamageModify
+    minPressure: -1
     additionalDamage:
       types:
-        Blunt: 10
+        Blunt: 20
         Slash: 15
+  - type: Clothing
+    sprite: ADT/Objects/Weapons/Melee/Crushers/crusher_hammer.rsi
+    quickEquip: false
+    slots:
+    - suitStorage
+  - type: UnpoweredFlashlight
+  - type: PointLight
+    color: "#ffeead"
+    enabled: false
 
 - type: entity
   parent: WeaponKineticBase
@@ -159,7 +198,7 @@
       types:
         Blunt: 2.5
         Slash: 2.5
-        Structural: 30
+        Structural: 10
   - type: BackstabDamageMultipilier
     bonusDamage:
       types:
@@ -170,10 +209,32 @@
     size: Normal
     sprite: ADT/Objects/Weapons/Melee/Crushers/crusher_claws-inhands.rsi
   - type: PressureDamageModify
+    minPressure: -1
     additionalDamage:
       types:
         Blunt: 10
         Slash: 15
+  - type: Clothing
+    sprite: ADT/Objects/Weapons/Melee/Crushers/crusher_claws.rsi
+    quickEquip: false
+    slots:
+    - suitStorage
+  - type: Tool
+    qualities:
+      - Slicing
+    useSound:
+      path: /Audio/Items/Culinary/chop.ogg
+  - type: Prying 
+    useSound:
+      path: /Audio/Items/crowbar.ogg
+  - type: UnpoweredFlashlight
+  - type: PointLight
+    color: "#ffeead"
+    enabled: false
+  - type: Sharp
+  - type: Utensil
+    types:
+      - Knife
 
 - type: entity
   parent: WeaponKineticBase
@@ -204,7 +265,29 @@
       types:
         Slash: 10
   - type: PressureDamageModify
+    minPressure: -1
     additionalDamage:
       types:
         Blunt: 10
         Slash: 15
+  - type: Clothing
+    sprite: ADT/Objects/Weapons/Melee/Crushers/crusher_machete.rsi
+    quickEquip: false
+    slots:
+    - suitStorage
+  - type: Tool
+    qualities:
+      - Slicing
+    useSound:
+      path: /Audio/Items/Culinary/chop.ogg
+  - type: Prying 
+    useSound:
+      path: /Audio/Items/crowbar.ogg
+  - type: UnpoweredFlashlight
+  - type: PointLight
+    color: "#ffeead"
+    enabled: false
+  - type: Sharp
+  - type: Utensil
+    types:
+      - Knife

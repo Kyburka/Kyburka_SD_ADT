@@ -54,9 +54,7 @@ entities:
     - type: Transform
     - type: Map
       mapPaused: True
-    - type: PhysicsMap
     - type: GridTree
-    - type: MovedGrids
     - type: Broadphase
     - type: OccluderTree
   - uid: 2
@@ -11160,50 +11158,6 @@ entities:
     components:
     - type: Transform
       pos: -1.5131886,19.554945
-      parent: 2
-- proto: ADTChairOktoberfest
-  entities:
-  - uid: 30
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 43.5,34.5
-      parent: 2
-  - uid: 31
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 44.5,34.5
-      parent: 2
-  - uid: 32
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 49.5,35.5
-      parent: 2
-  - uid: 33
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 50.5,36.5
-      parent: 2
-  - uid: 34
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 47.5,34.5
-      parent: 2
-  - uid: 35
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 48.5,34.5
-      parent: 2
-  - uid: 36
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 46.5,35.5
       parent: 2
 - proto: ADTChairPizzeria
   entities:
@@ -73548,8 +73502,8 @@ entities:
     components:
     - type: Transform
       parent: 11782
-    - type: Artifact
-      isSuppressed: True
+    # - type: Artifact
+    #   isSuppressed: True
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage

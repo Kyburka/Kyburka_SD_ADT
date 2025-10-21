@@ -133,9 +133,7 @@ entities:
     - type: Transform
     - type: Map
       mapPaused: True
-    - type: PhysicsMap
     - type: GridTree
-    - type: MovedGrids
     - type: Parallax
       parallax: AvriteStation
     - type: Broadphase
@@ -56819,13 +56817,13 @@ entities:
     - type: Transform
       pos: -8.5,23.5
       parent: 2
-- proto: BorgModuleTreatment
-  entities:
-  - uid: 2935
-    components:
-    - type: Transform
-      pos: 26.471731,12.597915
-      parent: 2
+# - proto: BorgModuleTreatment
+#   entities:
+#   - uid: 2935
+#     components:
+#     - type: Transform
+#       pos: 26.471731,12.597915
+#       parent: 2
 - proto: BowImprovised
   entities:
   - uid: 2937

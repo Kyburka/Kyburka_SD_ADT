@@ -16,6 +16,8 @@
     whitelist:
       tags:
       - PKAUpgrade
+  - type: Gun
+    fireRate: 0.5 # Tweak 0.3
   - type: ContainerContainer
     containers:
       upgrades: !type:Container
@@ -36,7 +38,7 @@
 - type: entity
   name: proto-kinetic repeater
   id: ADTWeaponProtoKineticRepeater
-  parent: [WeaponProtoKineticAcceleratorBase, BaseCargoContraband]
+  parent: [WeaponProtoKineticAcceleratorBase, BaseGunWieldable, BaseCargoContraband]
   description: The Repeater trades mod space and a bit of damage for the ability to fire three shots in rapid succession before needing to recharge, while also doing more damage than base PKA if all three shots are landed.
   components:
   - type: Sprite
@@ -51,6 +53,10 @@
     whitelist:
       tags:
       - PKAUpgrade
+  - type: GunWieldBonus
+    minAngle: 0
+    maxAngle: 0
+  - type: GunRequiresWield
   - type: ContainerContainer
     containers:
       upgrades: !type:Container
@@ -61,9 +67,8 @@
     capacity: 3
     count: 3
   - type: Gun
-    resetOnHandSelected: false
     burstCooldown: 2
-    fireRate: 0.5
+    fireRate: 0.4 # Tweak 0.5 > 0.4
     selectedMode: Burst
     angleDecay: 45
     minAngle: 2
@@ -86,7 +91,7 @@
 - type: entity
   name: proto-kinetic railgun
   id: ADTWeaponProtoKineticRailgun
-  parent: [WeaponProtoKineticAcceleratorBase, BaseCargoContraband]
+  parent: [WeaponProtoKineticAcceleratorBase, BaseGunWieldable, BaseCargoContraband]
   description: The Railgun trades customization, fire rate, and storage capabilities for the ability to fire a high damage shot that penetrates creatures!
   components:
   - type: Sprite
@@ -97,7 +102,7 @@
       visible: false
       map: [ "empty-icon" ]
   - type: UpgradeableGun
-    maxUpgradeCount: 1
+    maxUpgradeCount: 2 # Tweak 1 > 2
     whitelist:
       tags:
       - PKAUpgrade
@@ -107,13 +112,16 @@
   - type: Item
     sprite: ADT/Objects/Weapons/Guns/PKAs/kinetic_railgun.rsi
     size: Normal
+  - type: GunWieldBonus
+    minAngle: 0
+    maxAngle: 0
+  - type: GunRequiresWield
   - type: BasicEntityAmmoProvider
     proto: ADTBulletKineticRailgun
     capacity: 1
     count: 1
   - type: Gun
-    resetOnHandSelected: false
-    fireRate: 0.3
+    fireRate: 0.25 # Tweak 0.3 > 0.25
     angleDecay: 45
     minAngle: 2
     maxAngle: 3
@@ -141,7 +149,7 @@
       visible: false
       map: [ "empty-icon" ]
   - type: UpgradeableGun
-    maxUpgradeCount: 2
+    maxUpgradeCount: 3 # Tweak 2 > 3
     whitelist:
       tags:
       - PKAUpgrade
@@ -149,6 +157,8 @@
     minAngle: 0
     maxAngle: 0
   - type: GunRequiresWield
+  - type: Gun
+    fireRate: 0.3 # Tweak 0.3
   - type: ContainerContainer
     containers:
       upgrades: !type:Container
@@ -184,6 +194,8 @@
     whitelist:
       tags:
       - PKAUpgrade
+  - type: Gun
+    fireRate: 0.4 # Tweak 0.4
   - type: ContainerContainer
     containers:
       upgrades: !type:Container

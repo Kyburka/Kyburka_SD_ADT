@@ -76,6 +76,7 @@
   - type: NoRotateOnMove
   - type: Input
     context: "human"
+  - type: ProjectileIgnoreCrawling # ADT-Tweak
 
 - type: entity
   parent: BaseWeaponTurret
@@ -97,7 +98,7 @@
   - type: BallisticAmmoProvider
     proto: CartridgeCaselessRifle
     capacity: 500
-      
+
 - type: entity
   parent: BaseWeaponTurret
   id: BaseWeaponEnergyTurret
@@ -129,7 +130,7 @@
   - type: ApcPowerReceiverBattery
     idleLoad: 5
     batteryRechargeRate: 200
-    batteryRechargeEfficiency: 1.225
+    batteryRechargeEfficiency: 0.0 # temporarily no power draw because this was causing potentially seizure inducing light flickering
   - type: ApcPowerReceiver
     powerLoad: 5
   - type: ExtensionCableReceiver

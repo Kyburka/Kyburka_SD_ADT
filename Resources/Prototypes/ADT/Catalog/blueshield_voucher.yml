@@ -1,0 +1,20 @@
+- type: thiefBackpackSet
+  id: WeaponSaberRevBlueshield
+  name: blueshield-voucher-saber-rev-name
+  description: blueshield-voucher-saber-rev-description
+  sprite:
+    sprite: ADT/Objects/Weapons/Guns/Saber_revolvers/energy.rsi
+    state: base
+  content:
+  - ADTBaseWeaponCaseNTBS
+
+- type: thiefBackpackSet
+  id: WeaponHalberdBlueshield # SD Tweak - add BSO halberd
+  name: blueshield-voucher-halberd-name
+  description: blueshield-voucher-halberd-description
+  sprite:
+    sprite: SD/Objects/Weapons/Melee/halberd.rsi
+    state: icon
+  content:
+  - SD_BSOHalberd
+

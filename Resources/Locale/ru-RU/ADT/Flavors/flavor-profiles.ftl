@@ -33,14 +33,13 @@ flavor-complex-livseybeer = как хмель, солод и жидкость и
 flavor-complex-classicpaulaner = как хмель, солод и традиция
 flavor-complex-technobeer = как хмель, солод и горячая зад...душа
 flavor-complex-sausagebeer = как хмель, солод и колбаска
+flavor-complex-cargobeer = На вкус как скала и камень
+flavor-complex-leafloverbeer = На вкус как слабость
+flavor-complex-scientificale = На вкус как плазма и хмель
+flavor-complex-uraniumale = На вкус радиактивно, небезопасно и рак.
 flavor-complex-goldenale = как эль, золото и исцеление
-
-flavor-base-adtpoppy = маково
 flavor-complex-adtrelaxing = как довольно сильный наркотик
-flavor-base-adtvanilla = ванильно
-flavor-base-mandarin = сочная мандаринка
 
-flavor-complex-ADTChocolateDrinkFlavor = как теплый растопленный шоколад
 flavor-complex-ADTCocoaDrink = как тепло, уют и какао
 
 flavor-base-adtsindipizza = зловеще сырно
@@ -64,6 +63,13 @@ flavor-base-adtmushroompasta = как паста и грибы
 flavor-base-adtsalmonpasta = как рыба с лапшой
 flavor-base-adttomatomeatballpasta = замечательно и мясисто
 
+
+flavor-base-adtstrawberryflavor = клубнично
+
+flavor-complex-adtorangeteareg = как горячий апельсиновый чай
+flavor-complex-adtcherryteareg = как горячий вишнёвый чай
+flavor-complex-adtwatermelonteareg = как горячий арбузный чай
+
 flavor-complex-adtgummyslime = как сладковатая голубика. Но как вы могли съесть такого милаху?
 flavor-complex-adtgummyarachnid = как черничное мороженое. Кажется, или эта паутина застряла между зубов?...
 flavor-complex-adtgummyarkana = как арбузное пюре. Чувствуется приятное покалывание вашего языка.
@@ -85,3 +91,24 @@ flavor-complex-adtgummyunath = как лаймовый фреш. Чувству�
 flavor-complex-adtgummyursus = как медовые соты. Вы слышите пчелиное жужжание на стороне, или это лишь наваждение..
 flavor-complex-adtgummyvox = как лимонный сок. Вам кажется, что вкус не сочетается с цветом желе. Может, так и задуманно?
 flavor-complex-adtgummyvulpkanin = как персиковая мякоть. Кажется, вы способны проработать еще долгое время.
+
+flavor-complex-adtyupidryapple = как концентрированное кисло-сладкое яблоко
+flavor-complex-adtyupidryberries = как концентрированные кисло-сладкие лесные ягоды
+flavor-complex-adtyupidrycherry = как концентрированная кисло-сладкая вишня
+flavor-complex-adtyupidrymango = как концентрированное кисло-сладкое манго
+flavor-complex-adtyupidryorange = как концентрированный кисло-сладкий апельсин
+flavor-complex-adtyupidrypeach = как концентрированный кисло-сладкий персик
+flavor-complex-adtyupidrypineapple = как концентрированный кисло-сладкий ананас
+flavor-complex-adtyupidryraspberry = как концентрированная кисло-сладкая малина
+flavor-complex-adtyupidrystrawberry = как концентрированная кисло-сладкая клубника
+flavor-complex-adtyupidrywatermelon = как концентрированный кисло-сладкий арбуз
+flavor-complex-adtyupiapple = как химозный яблочный сок и беззаботное детство
+flavor-complex-adtyupiberries = как химозный ягодный сок и беззаботное детство
+flavor-complex-adtyupicherry = как химозный вишнёвый сок и беззаботное детство
+flavor-complex-adtyupimango = как химозный манговый сок и беззаботное детство
+flavor-complex-adtyupiorange = как химозный апельсиновый сок и беззаботное детство
+flavor-complex-adtyupipeach = как химозный персиковый сок и беззаботное детство
+flavor-complex-adtyupipineapple = как химозный ананасовый сок и беззаботное детство
+flavor-complex-adtyupiraspberry = как химозный малиновый сок и беззаботное детство
+flavor-complex-adtyupistrawberry = как химозный клубничный сок и беззаботное детство
+flavor-complex-adtyupiwatermelon = как химозный арбузный сок и беззаботное детство

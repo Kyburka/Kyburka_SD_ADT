@@ -113,9 +113,7 @@ entities:
     - type: Transform
     - type: Map
       mapPaused: True
-    - type: PhysicsMap
     - type: GridTree
-    - type: MovedGrids
     - type: Broadphase
     - type: OccluderTree
     - type: Parallax
@@ -28016,21 +28014,21 @@ entities:
       parent: 17115
     - type: Physics
       canCollide: False
-- proto: ADTFoodSnackScientistCake
-  entities:
-  - uid: 29616
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -21.322891,-27.412176
-      parent: 2
-- proto: ADTFunCardsBoxFull36
-  entities:
-  - uid: 15101
-    components:
-    - type: Transform
-      pos: -6.672778,45.502117
-      parent: 2
+# - proto: ADTFoodSnackScientistCake
+#   entities:
+#   - uid: 29616
+#     components:
+#     - type: Transform
+#       rot: 3.141592653589793 rad
+#       pos: -21.322891,-27.412176
+#       parent: 2
+# - proto: ADTFunCardsBoxFull36
+#   entities:
+#   - uid: 15101
+#     components:
+#     - type: Transform
+#       pos: -6.672778,45.502117
+#       parent: 2
 - proto: ADTFunPokerBox
   entities:
   - uid: 212
@@ -28421,15 +28419,15 @@ entities:
     - type: Transform
       pos: 55.5,1.5
       parent: 2
-- proto: ADTStudentBomber
-  entities:
-  - uid: 22815
-    components:
-    - type: Transform
-      parent: 22623
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
+# - proto: ADTStudentBomber
+#   entities:
+#   - uid: 22815
+#     components:
+#     - type: Transform
+#       parent: 22623
+#     - type: Physics
+#       canCollide: False
+#     - type: InsideEntityStorage
 - proto: ADTSuitStorageBlueshield
   entities:
   - uid: 68
@@ -28458,13 +28456,6 @@ entities:
     components:
     - type: Transform
       pos: 51.5,-25.5
-      parent: 2
-- proto: ADTTagillaSledgehammerToy
-  entities:
-  - uid: 25697
-    components:
-    - type: Transform
-      pos: 61.624504,-30.375885
       parent: 2
 - proto: ADTTapeRecorder
   entities:
@@ -112905,7 +112896,7 @@ entities:
           - 22707
           - 22767
           - 22793
-          - 22815
+          # - 22815
         paper_label: !type:ContainerSlot
           showEnts: False
           occludes: True
@@ -132675,7 +132666,7 @@ entities:
     - type: Transform
       pos: -43.695137,-47.651398
       parent: 2
-- proto: Forgotten God rune
+- proto: ADTForgottenGodrune
   entities:
   - uid: 3321
     components:

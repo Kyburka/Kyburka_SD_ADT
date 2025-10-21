@@ -64,9 +64,7 @@ entities:
     - type: Transform
     - type: Map
       mapPaused: True
-    - type: PhysicsMap
     - type: GridTree
-    - type: MovedGrids
     - type: Broadphase
     - type: OccluderTree
   - uid: 2
@@ -17690,30 +17688,12 @@ entities:
     - type: Transform
       pos: 37.5,20.5
       parent: 2
-- proto: ADTFoodSnackCandyLove
-  entities:
-  - uid: 35972
-    components:
-    - type: Transform
-      pos: 87.88307,36.5976
-      parent: 2
 - proto: ADTGlassBottle
   entities:
   - uid: 14679
     components:
     - type: Transform
       pos: -24.28581,48.769283
-      parent: 2
-- proto: ADTHalloweenBroom
-  entities:
-  - uid: 2329
-    components:
-    - type: MetaData
-      desc: Весьма старомодно.
-      name: метла
-    - type: Transform
-      rot: 1.0471975511965976 rad
-      pos: -28.8,49.457558
       parent: 2
 - proto: ADTKitchenAssembler
   entities:
